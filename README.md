@@ -1,5 +1,6 @@
 # flipper-zero-project
 
+A new method which I tried and does detect Flipper Zero’s BAD USB capability is tracking the speed at which keystrokes are being entered. The slower speed at which a BAD USB types, the more it is noticeable to the user, hence attackers usually increase the speed at which BAD USB C types codes. This make it different than human typing speed. From some references online I found that for a small Hello World program from the Flipper Zero, it takes 32 milliseconds to types the entire code and as few as 32 keystrokes. For an attacker to execute a malware on the device, they would need as low as 2 milliseconds of speed to type over 300 keystrokes, to make the user not notice the payload being executed. This can be detected by a small piece of code and effectively be used to detect BAD USBs
 ## Code for detecting BAD USB via Flipper Zero
 
 ```c
@@ -91,3 +92,6 @@ int main(int argc, char *argv[]) {
 
 ## Output/ Images:
 
+![image](pictures/1.png)
+![image](pictures/3.png)
+![image](pictures/4.png)
